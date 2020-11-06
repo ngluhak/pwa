@@ -1,8 +1,8 @@
 <template>
   <form>
-      <b-input v-model="name" placeholder="upisi ime todo itema"></b-input>
+      <b-input v-model="name" placeholder="unesi email za registraciju u profil"></b-input>
         
-      <b-button >Novi todo</b-button>
+      <b-button >Registriraj se</b-button>
   </form>
 </template>
 
