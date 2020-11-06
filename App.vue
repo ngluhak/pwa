@@ -16,11 +16,11 @@ export default {
   data() {
             return {
                 data: [
-                    { 'id': 1, 'first_name': 'Jesse', 'last_name': 'Simmons', 'date': '2016-10-15 13:43:27', 'gender': 'Male' },
-                    { 'id': 2, 'first_name': 'John', 'last_name': 'Jacobs', 'date': '2016-12-15 06:00:53', 'gender': 'Male' },
-                    { 'id': 3, 'first_name': 'Tina', 'last_name': 'Gilbert', 'date': '2016-04-26 06:26:28', 'gender': 'Female' },
-                    { 'id': 4, 'first_name': 'Clarence', 'last_name': 'Flores', 'date': '2016-04-10 10:28:46', 'gender': 'Male' },
-                    { 'id': 5, 'first_name': 'Anne', 'last_name': 'Lee', 'date': '2016-12-06 14:38:38', 'gender': 'Female' }
+                    { 'id': 1, 'plant': 'Ivory Towers', 'latin': 'Crassula perforata', 'date': '2016-10-15 13:43:27', 'stock': 'yes' },
+                    { 'id': 2, 'plant': 'Red Heuff', 'latin': 'Sempervivum heuffelii', 'date': '2016-12-15 06:00:53', 'stock': 'yes' },
+                    { 'id': 3, 'plant': 'String of Pearls', 'latin': 'Senecio rowleyanus', 'date': '2016-04-26 06:26:28', 'stock': 'no' },
+                    { 'id': 4, 'plant': 'Thimble Cactus', 'latin': 'Mammillaria gracilis', 'date': '2016-04-10 10:28:46', 'stock': 'yes' },
+                    { 'id': 5, 'plant': 'Torch Cactus', 'latin': 'Echinopsis spachiana', 'date': '2016-12-06 14:38:38', 'stock': 'no' }
                 ],
                 columns: [
                     {
@@ -30,12 +30,12 @@ export default {
                         numeric: true
                     },
                     {
-                        field: 'first_name',
-                        label: 'First Name',
+                        field: 'plant',
+                        label: 'Plant',
                     },
                     {
-                        field: 'last_name',
-                        label: 'Last Name',
+                        field: 'latin',
+                        label: 'Latin',
                     },
                     {
                         field: 'date',
@@ -43,8 +43,8 @@ export default {
                         centered: true
                     },
                     {
-                        field: 'gender',
-                        label: 'Gender',
+                        field: 'stock',
+                        label: 'Stock',
                     }
                 ]
             }
